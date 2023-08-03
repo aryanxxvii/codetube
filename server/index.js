@@ -6,7 +6,7 @@ import videoRoutes from "./routes/videos.js"
 import commentRoutes from "./routes/comments.js"
 import authRoutes from "./routes/auth.js"
 import cookieParser from "cookie-parser"
-const cors = require("cors")
+import cors from "cors"
 const app = express()
 app.use(
   cors({
