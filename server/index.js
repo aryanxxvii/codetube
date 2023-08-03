@@ -9,7 +9,7 @@ import cookieParser from "cookie-parser"
 
 const app = express()
 dotenv.config()
-
+const port = process.env.PORT || 8080
 // Connecting to mongoDB
 const connect = () => {
   mongoose
@@ -39,7 +39,7 @@ app.use((err, req, res, next) => {
   })
 })
 // Server ON
-app.listen(8080, () => {
+app.listen(port, () => {
   connect()
   console.log("Connected to server")
 })
