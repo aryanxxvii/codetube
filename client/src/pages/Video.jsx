@@ -113,9 +113,6 @@ const Subscribe = styled.button`
 
 const Video = () => {
   const { currentUser } = useSelector((state) => state.user)
-  console.log(currentUser)
-  console.log(currentUser.subscribedUsers)
-  // console.log(currentUser)
   const { currentVideo } = useSelector((state) => state.video)
   const dispatch = useDispatch()
   const path = useLocation().pathname.split("/")[2]
